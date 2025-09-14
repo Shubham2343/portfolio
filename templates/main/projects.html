@@ -1,0 +1,236 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects - Shubh - Portfolio{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Projects</h1>
+        <p>Real solutions delivering measurable results for businesses</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section">
+    <div class="container">
+        <div class="projects-grid">
+            <!-- Project 1: AI Agent Chatbot -->
+            <div class="project-card detailed" data-project="ai-chatbot">
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <h3>AI Agent Chatbot</h3>
+                    <p class="project-description">
+                        Intelligent chatbot powered by LLMs/NLP that handles FAQs, API integrations, 
+                        bookings, and personalized responses. Built with advanced natural language 
+                        processing capabilities.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Natural language understanding</li>
+                            <li>API integrations for real-time data</li>
+                            <li>Booking and scheduling automation</li>
+                            <li>Personalized response generation</li>
+                            <li>Multi-channel deployment</li>
+                        </ul>
+                    </div>
+                    <div class="project-benefits">
+                        <h4>Benefits:</h4>
+                        <div class="benefits-grid">
+                            <span class="benefit">24/7 Support</span>
+                            <span class="benefit">Faster Responses</span>
+                            <span class="benefit">Reduced Costs</span>
+                            <span class="benefit">Improved UX</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenAI GPT</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">WebSocket</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Email Responder Automation -->
+            <div class="project-card detailed" data-project="email-automation">
+                <div class="project-image">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Email Responder Automation with n8n</h3>
+                    <p class="project-description">
+                        Automates incoming emails, categorizes them (Support, Sales, General), 
+                        and sends appropriate replies. Features smart categorization and urgent 
+                        escalation to Slack/WhatsApp.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Smart email categorization</li>
+                            <li>Automated response generation</li>
+                            <li>Urgent escalation system</li>
+                            <li>Slack/WhatsApp integration</li>
+                            <li>Response quality monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="project-benefits">
+                        <h4>Benefits:</h4>
+                        <div class="benefits-grid">
+                            <span class="benefit">Instant Responses</span>
+                            <span class="benefit">Smart Routing</span>
+                            <span class="benefit">Reduced Workload</span>
+                            <span class="benefit">Better Organization</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Gmail API</span>
+                        <span class="tech-tag">Slack API</span>
+                        <span class="tech-tag">WhatsApp API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: WhatsApp Responder Automation -->
+            <div class="project-card detailed" data-project="whatsapp-automation">
+                <div class="project-image">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="project-content">
+                    <h3>WhatsApp Responder Automation</h3>
+                    <p class="project-description">
+                        AI-powered WhatsApp message responder that uses rules or AI to reply 
+                        to messages. Can share documents and integrate with CRM/payment APIs 
+                        for complete business automation.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Rule-based and AI responses</li>
+                            <li>Document sharing capability</li>
+                            <li>CRM integration</li>
+                            <li>Payment processing</li>
+                            <li>Multi-language support</li>
+                        </ul>
+                    </div>
+                    <div class="project-benefits">
+                        <h4>Benefits:</h4>
+                        <div class="benefits-grid">
+                            <span class="benefit">Instant Replies</span>
+                            <span class="benefit">24/7 Support</span>
+                            <span class="benefit">Reduced Manual Work</span>
+                            <span class="benefit">Better Engagement</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">WhatsApp Business API</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Lead Generation Workflow -->
+            <div class="project-card detailed" data-project="lead-generation">
+                <div class="project-image">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Lead Generation Workflow (Google Maps / LinkedIn) with n8n</h3>
+                    <p class="project-description">
+                        Automated lead generation system that extracts company/professional data 
+                        (emails, phones, profiles) from Google Maps and LinkedIn. Saves to CRM/Database 
+                        and automates outreach with follow-ups.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Google Maps data extraction</li>
+                            <li>LinkedIn profile scraping</li>
+                            <li>CRM integration</li>
+                            <li>Automated outreach</li>
+                            <li>Follow-up sequences</li>
+                        </ul>
+                    </div>
+                    <div class="project-benefits">
+                        <h4>Benefits:</h4>
+                        <div class="benefits-grid">
+                            <span class="benefit">Quality Leads</span>
+                            <span class="benefit">Automated Outreach</span>
+                            <span class="benefit">Time Saving</span>
+                            <span class="benefit">Higher Conversion</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Selenium</span>
+                        <span class="tech-tag">HubSpot API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Contact Form Automation -->
+            <div class="project-card detailed" data-project="contact-automation">
+                <div class="project-image">
+                    <i class="fas fa-form"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Contact Us Form Automation</h3>
+                    <p class="project-description">
+                        Complete contact form automation system that captures inquiries, stores 
+                        in DB/CRM, validates data, and sends instant notifications. Auto-assigns 
+                        leads and sends acknowledgment replies with Slack/WhatsApp integration.
+                    </p>
+                    <div class="project-features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Form data validation</li>
+                            <li>CRM integration</li>
+                            <li>Instant notifications</li>
+                            <li>Auto-lead assignment</li>
+                            <li>Acknowledgment replies</li>
+                        </ul>
+                    </div>
+                    <div class="project-benefits">
+                        <h4>Benefits:</h4>
+                        <div class="benefits-grid">
+                            <span class="benefit">Faster Responses</span>
+                            <span class="benefit">No Missed Leads</span>
+                            <span class="benefit">Improved Experience</span>
+                            <span class="benefit">Better Organization</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Email API</span>
+                        <span class="tech-tag">Slack API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Interested in Similar Solutions?</h2>
+            <p>Let's discuss how I can help automate your business processes</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-large">
+                <i class="fas fa-rocket"></i>
+                Start Your Project
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

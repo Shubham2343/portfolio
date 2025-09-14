@@ -1,0 +1,301 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Shubh - Portfolio{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">I help businesses</span>
+                    <br>automate workflows using AI
+                </h1>
+                <p class="hero-subtitle">
+                    Specialized in building AI chatbots, voice AI, automation workflows, and API integrations. 
+                    Transform your business with intelligent automation solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="{% url 'projects' %}" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="{% url 'contact' %}" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#" class="btn btn-outline" id="resume-btn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1" data-tilt>
+                        <div class="card-inner">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Chatbots</span>
+                        </div>
+                    </div>
+                    <div class="card card-2" data-tilt>
+                        <div class="card-inner">
+                            <i class="fas fa-cogs"></i>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                    <div class="card card-3" data-tilt>
+                        <div class="card-inner">
+                            <i class="fas fa-plug"></i>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                    <div class="card card-4" data-tilt>
+                        <div class="card-inner">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive 3D Elements -->
+                <div class="interactive-3d">
+                    <div class="geometric-shape shape-1"></div>
+                    <div class="geometric-shape shape-2"></div>
+                    <div class="geometric-shape shape-3"></div>
+                    <div class="geometric-shape shape-4"></div>
+                    <div class="geometric-shape shape-5"></div>
+                </div>
+                
+                <!-- Floating Orbs -->
+                <div class="floating-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                    <div class="orb orb-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Passionate AI automation specialist from Mumbai</p>
+                </div>
+                <div class="about-description">
+                    <p>
+                        Hi, I'm Shubham Prajapati! I'm a passionate AI automation specialist based in Mumbai, Maharashtra, India. 
+                        I help businesses streamline their operations through intelligent automation solutions, 
+                        AI chatbots, and seamless API integrations.
+                    </p>
+                    <p>
+                        With expertise in modern technologies like Django, React, n8n, and various AI tools, 
+                        I create solutions that not only save time and money but also enhance user experiences. 
+                        My goal is to transform how businesses operate in the digital age.
+                    </p>
+                    <div class="qualification-section">
+                        <h4>Education</h4>
+                        <div class="qualification-item">
+                            <h5>BSc IT (Cloud Computing)</h5>
+                            <p class="university">Shri Ramswaroop Memorial University</p>
+                            <p class="location">Lucknow, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="about-stats hidden">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="profile-photo-large">
+                    <div class="photo-placeholder-large">
+                        <img src="{% static 'images/shubh.jpg' %}" alt="Shubh - AI Automation Specialist" class="profile-image">
+                    </div>
+                    <div class="photo-glow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>What I Do</h2>
+            <p>Comprehensive automation solutions for modern businesses</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-3d-hover>
+                <div class="service-icon">
+                    <i class="fas fa-workflow"></i>
+                </div>
+                <h3>Workflow Automation</h3>
+                <p>n8n, Zapier, Make integrations to streamline your business processes</p>
+                <div class="service-glow"></div>
+            </div>
+            <div class="service-card" data-3d-hover>
+                <div class="service-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>AI Chatbots</h3>
+                <p>Voice/text chatbots with GPT integration for 24/7 customer support</p>
+                <div class="service-glow"></div>
+            </div>
+            <div class="service-card" data-3d-hover>
+                <div class="service-icon">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3>API Integrations</h3>
+                <p>Connect CRM, payment, scheduling systems seamlessly</p>
+                <div class="service-glow"></div>
+            </div>
+            <div class="service-card" data-3d-hover>
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Data Automation</h3>
+                <p>Scraping, cleaning, and reporting pipelines for better insights</p>
+                <div class="service-glow"></div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'services' %}" class="btn btn-outline">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+            <p>Technologies and tools I work with</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Tailwind</span>
+                    <span class="skill-tag">Bootstrap</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">API Development</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Automation Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">n8n</span>
+                    <span class="skill-tag">Make</span>
+                    <span class="skill-tag">Zapier</span>
+                    <span class="skill-tag">Vapi</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>AI & Development Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Replit AI</span>
+                    <span class="skill-tag">OpenAI GPT</span>
+                    <span class="skill-tag">AI Chatbots</span>
+                    <span class="skill-tag">Voice AI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section class="featured-projects">
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Real solutions delivering real results</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card featured" data-3d-hover>
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Agent Chatbot</h3>
+                    <p>Intelligent chatbot powered by LLMs/NLP. Handles FAQs, API integrations, bookings, and personalized responses.</p>
+                    <div class="project-benefits">
+                        <span class="benefit">24/7 Support</span>
+                        <span class="benefit">Faster Responses</span>
+                        <span class="benefit">Reduced Costs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-3d-hover>
+                <div class="project-image">
+                    <i class="fas fa-envelope"></i>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-content">
+                    <h3>Email Automation</h3>
+                    <p>Automates incoming emails, categorizes and sends smart replies with n8n.</p>
+                </div>
+            </div>
+            <div class="project-card" data-3d-hover>
+                <div class="project-image">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="project-glow"></div>
+                </div>
+                <div class="project-content">
+                    <h3>WhatsApp Automation</h3>
+                    <p>AI-powered WhatsApp responder with CRM integration and document sharing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'projects' %}" class="btn btn-primary">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Automate Your Business?</h2>
+            <p>Let's discuss how AI and automation can transform your workflow</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-large">
+                <i class="fas fa-rocket"></i>
+                Start Your Project
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
