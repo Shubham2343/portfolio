@@ -74,7 +74,7 @@ A modern, professional freelancing portfolio website built with Django, featurin
 6. **Access the Website**
    - Main site: http://127.0.0.1:8000/
    - Admin panel: http://127.0.0.1:8000/admin/
-   - Admin credentials: username: `admin`, password: `admin123`
+   - Admin credentials: username: `shubhIndus`, password: `Shubh9956112312`
 
 ## 🎯 Usage
 
