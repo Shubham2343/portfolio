@@ -16,11 +16,16 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-your-secret-key-here-
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 # -------- FIX: ALLOW RENDER HOST --------
+# Render automatically sets RENDER_EXTERNAL_HOSTNAME
+# We include it so Django allows requests from Render's URL
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    os.environ.get("RENDER_EXTERNAL_HOSTNAME", "")
 ]
+
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 # ----------------------------------------
 
 # Application definition
@@ -114,5 +119,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email settings (for contact form)
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # For development
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'noreply@aispecialist.com'
