@@ -64,3 +64,4 @@ Currently using SQLite. For production with high traffic, consider upgrading to 
 - Railway provides automatic HTTPS
 - Static files are served efficiently with WhiteNoise
 - All migrations are applied automatically during deployment
+
