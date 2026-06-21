@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="{% load static %}{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% load static %}{% static 'css/style.css' %}?v=21">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -39,14 +39,10 @@
             <div class="nav-menu" id="nav-menu">
                 <a href="{% url 'home' %}" class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
                 <a href="{% url 'services' %}" class="nav-link {% if request.resolver_match.url_name == 'services' %}active{% endif %}">Services</a>
-                <a href="{% url 'projects' %}" class="nav-link {% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a>
                 <a href="{% url 'contact' %}" class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
             </div>
             
             <div class="nav-controls">
-                <button id="theme-toggle" class="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
                 <div class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
@@ -82,12 +78,12 @@
                     <p>Transforming businesses through intelligent automation and AI solutions.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li>Workflow Automation</li>
-                        <li>AI Chatbots</li>
-                        <li>API Integrations</li>
-                        <li>Data Automation</li>
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                        <li><a href="{% url 'experience' %}">Experience</a></li>
+                        <li><a href="{% url 'hobbies' %}">Hobbies</a></li>
+                        <li><a href="{% url 'certificates' %}">Certificates</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -115,13 +111,17 @@
                         <i class="fab fa-facebook"></i>
                     </a>
                 </div>
+                <button id="theme-toggle" class="theme-toggle footer-theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span class="theme-toggle-label">Switch theme</span>
+                </button>
                 <p>&copy; 2025 Shubh - AI Automation Specialist. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="{% load static %}{% static 'js/script.js' %}"></script>
+    <script src="{% load static %}{% static 'js/script.js' %}?v=2"></script>
     <script src="{% load static %}{% static 'js/vanilla-3d-animations.js' %}"></script>
 </body>
 </html>

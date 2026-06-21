@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Experience - Shubh - Portfolio{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header has-aurora">
+    <!-- Animated aurora background (adapts to light/dark theme) -->
+    <div class="hero-aurora" aria-hidden="true">
+        <span class="hero-aurora__orb orb-a"></span>
+        <span class="hero-aurora__orb orb-b"></span>
+        <span class="hero-aurora__orb orb-c"></span>
+        <div class="hero-aurora__grid"></div>
+    </div>
+    <div class="container">
+        <h1>Experience</h1>
+        <p>My professional journey as a developer</p>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section class="experience-section">
+    <div class="container">
+        <div class="experience-timeline">
+            <!-- Python Developer @ MCM BPO -->
+            <div class="experience-card" data-3d-hover>
+                <div class="experience-marker">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-head">
+                        <div>
+                            <h3>Python Developer</h3>
+                            <p class="experience-company">MCM BPO Pvt. Ltd. &mdash; Mumbai, India</p>
+                        </div>
+                        <span class="experience-period">July 2025 &ndash; Present</span>
+                    </div>
+                    <ul class="experience-points">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Developed and maintained dynamic web applications using HTML, CSS, JavaScript,
+                            React, Python, Django, and PostgreSQL. Initially built websites through manual
+                            development processes, and since December leveraged Claude AI-powered development
+                            tools to enhance productivity, streamline workflows, and accelerate website development.
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Built and integrated Voice AI Agents using Vapi, and designed AI-driven automation
+                            workflows for CRM and lead generation using n8n with Python and JavaScript-based custom logic.
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Worked on AI automation solutions including WhatsApp Automation, Lead Scraping, CRM
+                            integration, AI chatbot deployment, lead generation, and email marketing automation
+                            for business operations and customer engagement.
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Performed manual website testing and quality assurance for enterprise communication
+                            platforms including UCaaS and CCaaS-based applications to ensure performance,
+                            usability, and reliability.
+                        </li>
+                    </ul>
+                    <div class="experience-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Vapi</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Let's Work Together</h2>
+            <p>Interested in collaborating or have a role in mind? I'd love to hear from you.</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-large">
+                <i class="fas fa-rocket"></i>
+                Get In Touch
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

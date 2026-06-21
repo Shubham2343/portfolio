@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Hobbies & Interests - Shubh - Portfolio{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header has-aurora">
+    <!-- Animated aurora background (adapts to light/dark theme) -->
+    <div class="hero-aurora" aria-hidden="true">
+        <span class="hero-aurora__orb orb-a"></span>
+        <span class="hero-aurora__orb orb-b"></span>
+        <span class="hero-aurora__orb orb-c"></span>
+        <div class="hero-aurora__grid"></div>
+    </div>
+    <div class="container">
+        <h1>Hobbies &amp; Interests</h1>
+        <p>What keeps me curious beyond code</p>
+    </div>
+</section>
+
+<!-- Hobbies Section -->
+<section class="hobbies-section">
+    <div class="container">
+        <div class="hobbies-grid">
+            <!-- Geopolitics & International Relations -->
+            <div class="hobby-card glass">
+                <div class="hobby-icon-wrap">
+                    <span class="hobby-icon-glow"></span>
+                    <div class="hobby-icon">
+                        <i class="fas fa-earth-asia"></i>
+                    </div>
+                </div>
+                <span class="hobby-tag">Interest</span>
+                <h3>Geopolitics &amp; International Relations</h3>
+                <p>
+                    Enthusiastic about exploring geopolitics and international relations,
+                    with a keen interest in global affairs and geopolitical developments.
+                </p>
+                <div class="hobby-chips">
+                    <span class="hobby-chip"><i class="fas fa-globe"></i> Global Affairs</span>
+                    <span class="hobby-chip"><i class="fas fa-handshake"></i> Diplomacy</span>
+                    <span class="hobby-chip"><i class="fas fa-chart-line"></i> World Events</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

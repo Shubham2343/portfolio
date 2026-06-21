@@ -6,16 +6,24 @@
 {% block content %}
 <!-- Hero Section -->
 <section class="hero">
+    <!-- Animated aurora background (adapts to light/dark theme) -->
+    <div class="hero-aurora" aria-hidden="true">
+        <span class="hero-aurora__orb orb-a"></span>
+        <span class="hero-aurora__orb orb-b"></span>
+        <span class="hero-aurora__orb orb-c"></span>
+        <div class="hero-aurora__grid"></div>
+    </div>
     <div class="hero-container">
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="gradient-text">I help businesses</span>
-                    <br>automate workflows using AI
+                    <span class="gradient-text">I build scalable</span>
+                    <br>applications with Python
                 </h1>
                 <p class="hero-subtitle">
-                    Specialized in building AI chatbots, voice AI, automation workflows, and API integrations. 
-                    Transform your business with intelligent automation solutions.
+                    Python Developer specializing in backend systems, AI-powered applications, voice automation,
+                    and workflow automation using Django, PostgreSQL, n8n, and Vapi.
+                    Turning ideas into reliable, intelligent solutions.
                 </p>
                 <div class="hero-buttons">
                     <a href="{% url 'projects' %}" class="btn btn-primary">
@@ -26,7 +34,7 @@
                         <i class="fas fa-envelope"></i>
                         Get In Touch
                     </a>
-                    <a href="#" class="btn btn-outline" id="resume-btn">
+                    <a href="{% static 'documents/Shubham_Prajapati_Resume.pdf' %}" class="btn btn-outline" id="resume-btn" download="Shubham_Prajapati_Resume.pdf" target="_blank" rel="noopener">
                         <i class="fas fa-download"></i>
                         Download Resume
                     </a>
@@ -92,14 +100,15 @@
                 </div>
                 <div class="about-description">
                     <p>
-                        Hi, I'm Shubham Prajapati! I'm a passionate AI automation specialist based in Mumbai, Maharashtra, India. 
-                        I help businesses streamline their operations through intelligent automation solutions, 
-                        AI chatbots, and seamless API integrations.
+                        Results-driven Python Developer with experience building AI-powered applications,
+                        backend systems, voice automation solutions, and workflow automations using Python,
+                        Django, PostgreSQL, n8n, and Vapi.
                     </p>
                     <p>
-                        With expertise in modern technologies like Django, React, n8n, and various AI tools, 
-                        I create solutions that not only save time and money but also enhance user experiences. 
-                        My goal is to transform how businesses operate in the digital age.
+                        Skilled in developing scalable web applications, integrating AI tools, building
+                        automation workflows, and deploying applications using cloud and DevOps technologies
+                        including Docker, Kubernetes, and AWS. Strong foundation in backend development,
+                        automation engineering, and AI-driven business solutions.
                     </p>
                     <div class="qualification-section">
                         <h4>Education</h4>
@@ -127,8 +136,18 @@
             </div>
             <div class="about-visual">
                 <div class="profile-photo-large">
+                    <!-- Rotating orbit ring with a glowing dot -->
+                    <div class="photo-orbit" aria-hidden="true">
+                        <span class="orbit-dot"></span>
+                    </div>
+                    <div class="photo-orbit photo-orbit--reverse" aria-hidden="true">
+                        <span class="orbit-dot orbit-dot--alt"></span>
+                    </div>
+                    <div class="photo-orbit photo-orbit--third" aria-hidden="true">
+                        <span class="orbit-dot orbit-dot--third"></span>
+                    </div>
                     <div class="photo-placeholder-large">
-                        <img src="{% static 'images/shubh.jpg' %}" alt="Shubh - AI Automation Specialist" class="profile-image">
+                        <img src="{% static 'images/shubh.jpg' %}?v=2" alt="Shubham Prajapati - Python Developer" class="profile-image">
                     </div>
                     <div class="photo-glow"></div>
                 </div>
@@ -192,7 +211,7 @@
             <p>Technologies and tools I work with</p>
         </div>
         <div class="skills-grid">
-            <div class="skill-category">
+            <div class="skill-category" data-tilt>
                 <h3>Frontend Development</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">HTML</span>
@@ -203,7 +222,7 @@
                     <span class="skill-tag">Bootstrap</span>
                 </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-tilt>
                 <h3>Backend Development</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Django</span>
@@ -212,7 +231,7 @@
                     <span class="skill-tag">API Development</span>
                 </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-tilt>
                 <h3>Automation Tools</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">n8n</span>
@@ -221,7 +240,7 @@
                     <span class="skill-tag">Vapi</span>
                 </div>
             </div>
-            <div class="skill-category">
+            <div class="skill-category" data-tilt>
                 <h3>AI & Development Tools</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Replit AI</span>

@@ -339,15 +339,9 @@ window.addEventListener('load', function() {
 });
 
 // Resume Button Functionality
+// The button is a native download link (see home.html); no JS hijack needed.
 function initResumeButton() {
-    const resumeBtn = document.getElementById('resume-btn');
-    if (resumeBtn) {
-        resumeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Open resume PDF in new tab
-            window.open('/static/documents/resumewithPythonNEW.pdf', '_blank');
-        });
-    }
+    // Intentionally left as a no-op so the anchor's href/download work directly.
 }
 
 // Success Animation Functionality

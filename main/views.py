@@ -44,6 +44,21 @@ def projects(request):
     return render(request, 'main/projects.html')
 
 
+def experience(request):
+    track_page_view(request, 'experience')
+    return render(request, 'main/experience.html')
+
+
+def hobbies(request):
+    track_page_view(request, 'hobbies')
+    return render(request, 'main/hobbies.html')
+
+
+def certificates(request):
+    track_page_view(request, 'certificates')
+    return render(request, 'main/certificates.html')
+
+
 def contact(request):
     track_page_view(request, 'contact')
     
